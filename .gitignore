@@ -1,0 +1,16 @@
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+
+# Log files
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+#AWS Key Files
+*.pem
+

@@ -130,7 +130,7 @@ if __name__ == "__main__":
     try:
         with app.app_context():
             db.create_all()
-        app.run(debug=True, use_reloader=False, port=5000)
+        app.run(host='0.0.0.0', port=80, debug=True, use_reloader=False)
     except Exception as e:
         print(f"Failed to start the application: {e}")
         logging.critical(f"Failed to start the application: {e}", exc_info=True)
